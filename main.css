@@ -1,5 +1,11 @@
 
 body {
-    background-color: #3316efa3; /*or any color of your choosing*/
+    background-color: #0528ed9c; /*or any color of your choosing*/
     text-align: center;
+
 }
+
+.dog {
+    font-family: fantasy;
+}
+
