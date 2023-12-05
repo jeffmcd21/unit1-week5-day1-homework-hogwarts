@@ -139,24 +139,25 @@ $("ul").css("list-style", "none");
 
     // Bring it all back
     $(".secret").show("slow");
-
-
-
-
-    // Update the leash
-    const leashObject = items.find(item => item.text === 'leash');
-
-    // Add the new class to the existing class
-    leashObject.class += 'cabbage';
-
-    // Update the original array with the modified object
-    items[items.indexOf(leashObject)] = leashObject;
-
+    
     // Add class to dogs leash // Not Working
-    //$(dog).addClass("Cabbage")
+    //$dog.addClass("cabbage")
     
     // Remove class // Not Working
-    //$(dog).removeClass("Cabbage")
+    //$dog.removeClass("cabbage")
+    
+
+// ----- ***** ----- Year 6 ----- ***** ----- //
+
+    // Create the header and table elements separately
+    $container.find('h5').replaceWith('<h5>Fall 2018</h5>');
+
+    // More Butter beer...
+    $ul.prepend($("<li>", { text: "Butter beer" }));
+
+    // Buy a new chest
+    $ul.attr("storage", "chest");
+
 
 
 });
