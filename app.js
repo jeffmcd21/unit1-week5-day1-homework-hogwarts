@@ -43,5 +43,36 @@ $(() => {
     const $h4Two = $('<h4>Holly Wand with Unicorn Hair Core</h4>');
     $container.append($h4Two);
 
+// ----- ***** ----- Year 3 ----- ***** ----- //
+
+// create an unordered list with storage attribute set to "trunk"
+const $ul = $('<ul>', { storage: 'trunk' });
+
+// create list items for each item in the list
+const items = [
+  "butter beer",
+  {text: "invisibility cloak", class: "secret"},
+  {text: "magic map", class: "secret"},
+  {text: "time turner", class: "secret"},
+  {text: "leash", class: "dog"},
+  "Bertie Bott's Every Flavor [Jelly] Beans",
+];
+
+// add each item to the list
+items.forEach(item => {
+  if (typeof item === "string") {
+    $ul.append($("<li>", { text: item }));
+  } else {
+    $ul.append($('<li>', { text: item.text, class: item.class }));
+  }
 });
 
+// append the list to the container
+$('#container').append($ul);
+
+
+// Remove list item bullet points
+$('ul').css('list-style', 'none');
+
+
+});
