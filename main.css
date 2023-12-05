@@ -1,4 +1,9 @@
 
+h1 {
+    font-style: oblique;
+    color:greenyellow
+}
+
 body {
     background-color: #0528ed9c; /*or any color of your choosing*/
     text-align: center;
@@ -11,14 +16,17 @@ body {
 
 .secret {
     opacity: 0.5;
+    font-style: italic;
+
 }
 
 table, th, td {
     border: 1px solid black;
     margin: auto;
+    background-color: orange;
+    padding: 1em
 }
 
 .cabbage {
     color: chartreuse;
 }
-
