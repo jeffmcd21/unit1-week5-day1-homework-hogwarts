@@ -107,4 +107,29 @@ $("ul").css("list-style", "none");
     // Append header and table to div 
     $container.append($("<h5>Spring 2017</h5>")).append($(classTable))
     
+
+// ----- ***** ----- Year 5 ----- ***** ----- //
+
+    // Remove broken wand
+    $h4Two.remove()
+
+    // Remove butter beer // Not working
+    //items[0].remove()
+
+    // Add new wand after dog and change the color
+    const $h4Three = $("<h4>Wand with unbreakable shaft</h4>").css("color", "indigo");
+    $h4.after($h4Three);
+
+    
+    // Spy games
+    const $spyDog = $h4.remove()
+    $spyDog.insertBefore($h2)
+
+    
+    // Mission Complete
+    const $dogHome = $spyDog.remove()
+    $dogHome.insertAfter($h3)
+
+
+
 });
