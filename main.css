@@ -12,3 +12,8 @@ body {
 .secret {
     opacity: 0.5;
 }
+
+table, th, td {
+    border: 1px solid black;
+    margin: auto;
+}
