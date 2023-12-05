@@ -132,4 +132,31 @@ $("ul").css("list-style", "none");
 
 
 
+// ----- ***** ----- Year 6 ----- ***** ----- //
+
+    // Hide the goods but delaying the special move
+    $(".secret").delay(2000).hide("slow");
+
+    // Bring it all back
+    $(".secret").show("slow");
+
+
+
+
+    // Update the leash
+    const leashObject = items.find(item => item.text === 'leash');
+
+    // Add the new class to the existing class
+    leashObject.class += 'cabbage';
+
+    // Update the original array with the modified object
+    items[items.indexOf(leashObject)] = leashObject;
+
+    // Add class to dogs leash // Not Working
+    //$(dog).addClass("Cabbage")
+    
+    // Remove class // Not Working
+    //$(dog).removeClass("Cabbage")
+
+
 });
